@@ -4,24 +4,158 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ufuk Bombar</title>
-<meta name="description" content="Ufuk Bombar — personal website.">
+<meta name="description" content="Ufuk Bombar — PhD student at Sorbonne University working on Internet measurements, with experience in Kubernetes and computer vision.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <a class="brand" href="/">bombar.dev</a>
   <nav>
+    <a href="#experience">experience</a>
+    <a href="#projects">projects</a>
     <a href="https://blog.bombar.dev">blog</a>
-    <a href="https://github.com/ubombar">github</a>
   </nav>
 </header>
 <main>
-  <h1>Ufuk Bombar</h1>
-  <p class="intro">Software engineer and researcher. This site is under construction — in the meantime, read the <a href="https://blog.bombar.dev">blog</a>.</p>
+  <section class="hero">
+    <h1>Ufuk Bombar</h1>
+    <p class="role">PhD student · Internet measurements · Kubernetes · Computer vision</p>
+    <p>PhD student at <a href="https://www.lip6.fr">Sorbonne University</a> working on Internet measurements, with hands-on experience in Kubernetes and computer vision. I've built measurement platforms in Go, Kubernetes controllers for edge orchestration, and production vision models in PyTorch.</p>
+    <p class="meta">Paris, France · Turkish (native), English (C2), French (B2)</p>
+    <p class="links">
+      <a href="mailto:ufuk@bombar.dev">email</a>
+      <a href="cv.pdf">cv.pdf</a>
+      <a href="https://github.com/ubombar">github</a>
+      <a href="https://www.linkedin.com/in/ubombar">linkedin</a>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=M3TGOikAAAAJ">scholar</a>
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="cv">
+      <li>
+        <span class="when">2024 – 2027</span>
+        <div>
+          <h3>PhD, Event Impact &amp; Detection on Public Networks <span class="at">Sorbonne University</span></h3>
+          <p>Expected 2027.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2022 – 2024</span>
+        <div>
+          <h3>MSc, Distributed Computing &amp; Computer Vision <span class="at">Sorbonne University</span></h3>
+          <p>SFRI scholarship; thesis on Kubernetes extensions for edge-network orchestration at Nokia Bell Labs.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2017 – 2022</span>
+        <div>
+          <h3>BSc, Computer Engineering <span class="at">Bilkent University</span></h3>
+          <p>Summa cum laude.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="cv">
+      <li>
+        <span class="when">2024 – now</span>
+        <div>
+          <h3>Doctoral Researcher <span class="at">LIP6, Sorbonne University &amp; CNRS</span></h3>
+          <p>Research on detecting events on public networks and measuring their impact. Co-designed and co-maintain <a href="#projects">Retina</a>, an open-source Internet measurement platform used at Sorbonne University and the French Ministry of Defence, including its adaptive-rate scheduler and Prometheus monitoring. Built MPAT, which analyses 45&nbsp;TB of route data in under 6 hours, presented as a poster at IMC ’25.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2024</span>
+        <div>
+          <h3>Software Engineering Intern <span class="at">Nokia Bell Labs</span></h3>
+          <p>Architected a Go-based Kubernetes integration layer for edge/IoT orchestration, deploying edge workloads in under 5 seconds. Implemented controller-to-node communication with gRPC and Protocol Buffers, and built a provisioning tool that replaced a 30-minute cluster setup with a single command.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2023 – 2024</span>
+        <div>
+          <h3>Research Engineer <span class="at">LIP6, Sorbonne University</span></h3>
+          <p>Maintained <a href="https://edge-net.org">EdgeNet</a>'s production suite of about 15 Kubernetes controllers in Go for global edge-cloud orchestration; rewrote reconcilers and removed unused controllers to improve stability.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2021 – 2022</span>
+        <div>
+          <h3>Computer Vision Research Engineer <span class="at">ArgosAI Technology</span></h3>
+          <p>Built a production runway-monitoring model in PyTorch, cutting false-positive detections from 50+ to fewer than 4 per day. Led the C++ inference server migration to ONNX Runtime and introduced Kubeflow for GPU training orchestration.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2020 – 2021</span>
+        <div>
+          <h3>Full-Stack Software Engineer <span class="at">Borda Technologies</span></h3>
+          <p>Maintained an ASP.NET Core / PostgreSQL hospital inventory system deployed across 20+ hospital sites; built an internal infection-tracking app with AWS Lambda and Flutter.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2020 – 2021</span>
+        <div>
+          <h3>Research Student <span class="at">Özer Lab, Bilkent University</span></h3>
+          <p>Applied semantic segmentation to satellite radar imagery to detect buildings for disaster recovery in rural regions, under Prof. Sedat Özer.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2019</span>
+        <div>
+          <h3>Short-Term Visiting Scholar <span class="at">University of Mississippi, NCCHE</span></h3>
+          <p>Studied ArcGIS-based hydrological simulation frameworks to model water flow in the Mississippi River Basin, and implemented a parallel travelling-salesman algorithm in Python for geography-aware navigation on campus.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="cv">
+      <li>
+        <span class="when">Go · Protobuf</span>
+        <div>
+          <h3><a href="https://github.com/dioptra-io/retina-orchestrator">Retina — Distributed Internet Measurement Platform</a></h3>
+          <p>An open-source system that continuously maps Internet routes from vantage points around the world, over IPv4 and IPv6. A <a href="https://github.com/dioptra-io/retina-generator">generator</a> produces probing directives, the <a href="https://github.com/dioptra-io/retina-orchestrator">orchestrator</a> schedules them to <a href="https://github.com/dioptra-io/retina-agent">agents</a> over Protobuf on TCP, and an <a href="https://github.com/dioptra-io/retina-api">API</a> streams the results live to any number of subscribers. I co-designed the system and built its adaptive-rate scheduler, which paces millions of probes.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">MLX</span>
+        <div>
+          <h3><a href="https://github.com/ubombar/gemma4-inference-engine">Gemma 4 Inference Engine</a></h3>
+          <p>A local inference engine on the MLX backend, running a Q4-quantized Gemma 4 E4B model at about 26 tokens/s on an Apple silicon laptop.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Go · ClickHouse</span>
+        <div>
+          <h3>MPAT — Measurement Platform Analysis Tool</h3>
+          <p>A pipeline processing 45&nbsp;TB of traceroute data in under 6 hours, while shrinking the codebase from 11,000+ to 3,000 lines. Presented at IMC ’25.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul class="cv">
+      <li>
+        <span class="when">2025</span>
+        <div>
+          <h3><a href="https://doi.org/10.1145/3730567.3768596">Forwarding Score: A New Metric for Assessing the Quality of Internet Route Surveys</a></h3>
+          <p><strong>U. Bombar</strong>, K. Vermeulen, O. Fourmaux, T. Friedman. Poster, <em>ACM Internet Measurement Conference (IMC ’25)</em>, Madison, WI.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
 </main>
-<footer class="muted">&copy; <span id="y">2026</span> Ufuk Bombar</footer>
+<footer class="meta">&copy; <span id="y">2026</span> Ufuk Bombar</footer>
 <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>
