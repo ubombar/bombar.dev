@@ -16,17 +16,22 @@
     <a href="#experience">experience</a>
     <a href="#projects">projects</a>
     <a href="https://blog.bombar.dev">blog</a>
+    <a class="cv-link" href="cv.pdf">cv.pdf</a>
   </nav>
 </header>
 <main>
   <section class="hero">
-    <h1>Ufuk Bombar</h1>
-    <p class="role">PhD student · Internet measurements · Kubernetes · Computer vision</p>
+    <div class="hero-head">
+      <img class="avatar" src="photo.jpg" alt="Ufuk Bombar" width="112" height="112">
+      <div>
+        <h1>Ufuk Bombar <span class="loc">Paris, France</span></h1>
+        <p class="role">Research engineer · PhD student at Sorbonne University</p>
+        <p class="meta langs">English C2 · French B2 · Turkish native</p>
+      </div>
+    </div>
     <p>PhD student at <a href="https://www.lip6.fr">Sorbonne University</a> working on Internet measurements, with hands-on experience in Kubernetes and computer vision. I've built measurement platforms in Go, Kubernetes controllers for edge orchestration, and production vision models in PyTorch.</p>
-    <p class="meta">Paris, France · Turkish (native), English (C2), French (B2)</p>
     <p class="links">
       <a href="mailto:ufuk@bombar.dev">email</a>
-      <a href="cv.pdf">cv.pdf</a>
       <a href="https://github.com/ubombar">github</a>
       <a href="https://www.linkedin.com/in/ubombar">linkedin</a>
       <a href="https://scholar.google.com/citations?hl=en&amp;user=M3TGOikAAAAJ">scholar</a>
@@ -39,22 +44,26 @@
       <li>
         <span class="when">2024 – 2027</span>
         <div>
-          <h3>PhD, Event Impact &amp; Detection on Public Networks <span class="at">Sorbonne University</span></h3>
-          <p>Expected 2027.</p>
+          <h3>PhD, Measuring Event Impact and Propagation in the Internet <span class="at">Sorbonne University</span></h3>
+          <p>Fully funded research grant. Expected 2027.</p>
+          <p>Supervised by Timur Friedman, Kevin Vermeulen and Olivier Fourmaux.</p>
         </div>
       </li>
       <li>
         <span class="when">2022 – 2024</span>
         <div>
-          <h3>MSc, Distributed Computing &amp; Computer Vision <span class="at">Sorbonne University</span></h3>
-          <p>SFRI scholarship; thesis on Kubernetes extensions for edge-network orchestration at Nokia Bell Labs.</p>
+          <h3>MSc, Computer Science (Digital International Program) <span class="at">Sorbonne University</span></h3>
+          <p>SFRI merit scholarship.</p>
+          <p>Thesis at Nokia Bell Labs: extending Kubernetes to orchestrate workloads across the edge–cloud continuum.</p>
         </div>
       </li>
       <li>
         <span class="when">2017 – 2022</span>
         <div>
           <h3>BSc, Computer Engineering <span class="at">Bilkent University</span></h3>
-          <p>Summa cum laude.</p>
+          <p>Graduated cum laude.</p>
+          <p>Senior project: a distributed mask-detection system running detection models on live streams from many cameras.</p>
+          <p>Coursework: Computer Vision (A+), Machine Learning, Parallel Computing, Algorithms.</p>
         </div>
       </li>
     </ul>
@@ -67,7 +76,7 @@
         <span class="when">2024 – now</span>
         <div>
           <h3>Doctoral Researcher <span class="at">LIP6, Sorbonne University &amp; CNRS</span></h3>
-          <p>Research on detecting events on public networks and measuring their impact. Co-designed and co-maintain <a href="#projects">Retina</a>, an open-source Internet measurement platform used at Sorbonne University and the French Ministry of Defence, including its adaptive-rate scheduler and Prometheus monitoring. Built MPAT, which analyses 45&nbsp;TB of route data in under 6 hours, presented as a poster at IMC ’25.</p>
+          <p>Research on detecting events on public networks and measuring their impact. Co-designed and co-maintain <a href="#projects">Retina</a>, an open-source Internet measurement platform used at Sorbonne University and the French Ministry of Defence, including its adaptive-rate scheduler and Prometheus monitoring. Built MPAT, which analyses 45+ billion rows of route data in under 6 hours, presented as a poster at IMC ’25.</p>
         </div>
       </li>
       <li>
@@ -106,10 +115,17 @@
         </div>
       </li>
       <li>
+        <span class="when">2019 – 2020</span>
+        <div>
+          <h3>Teaching Assistant <span class="at">Bilkent University</span></h3>
+          <p>CS101 and CS102, Introduction to Programming I and II.</p>
+        </div>
+      </li>
+      <li>
         <span class="when">2019</span>
         <div>
-          <h3>Short-Term Visiting Scholar <span class="at">University of Mississippi, NCCHE</span></h3>
-          <p>Studied ArcGIS-based hydrological simulation frameworks to model water flow in the Mississippi River Basin, and implemented a parallel travelling-salesman algorithm in Python for geography-aware navigation on campus.</p>
+          <h3>Short-Term Visiting Scholar <span class="at">National Center for Computational Hydroscience and Engineering, University of Mississippi</span></h3>
+          <p>Summer research visit to a computational hydroscience centre. Studied ArcGIS-based simulation of water flow in the Mississippi River Basin, and implemented a parallel travelling-salesman solver in Python for geography-aware navigation on campus.</p>
         </div>
       </li>
     </ul>
@@ -119,6 +135,13 @@
     <h2>Projects</h2>
     <ul class="cv">
       <li>
+        <span class="when">Rust · Candle</span>
+        <div>
+          <h3><a href="https://github.com/ubombar/gemma4-inference-engine">Gemma 4 Inference Engine</a></h3>
+          <p>A from-scratch inference engine for Gemma 4 E4B: I wrote the model logic (attention, RoPE, per-layer embeddings, KV cache, sampling) on top of Candle's Q8_0 kernels. It also implements GCG, a gradient-guided search for adversarial prompt suffixes, with a custom backward pass through the quantized layers.</p>
+        </div>
+      </li>
+      <li>
         <span class="when">Go · Protobuf</span>
         <div>
           <h3><a href="https://github.com/dioptra-io/retina-orchestrator">Retina — Distributed Internet Measurement Platform</a></h3>
@@ -126,17 +149,79 @@
         </div>
       </li>
       <li>
-        <span class="when">MLX</span>
-        <div>
-          <h3><a href="https://github.com/ubombar/gemma4-inference-engine">Gemma 4 Inference Engine</a></h3>
-          <p>A local inference engine on the MLX backend, running a Q4-quantized Gemma 4 E4B model at about 26 tokens/s on an Apple silicon laptop.</p>
-        </div>
-      </li>
-      <li>
         <span class="when">Go · ClickHouse</span>
         <div>
           <h3>MPAT — Measurement Platform Analysis Tool</h3>
-          <p>A pipeline processing 45&nbsp;TB of traceroute data in under 6 hours, while shrinking the codebase from 11,000+ to 3,000 lines. Presented at IMC ’25.</p>
+          <p>The analysis pipeline behind our Forwarding Score metric (IMC ’25), which rates the quality of Internet route surveys. It processes 45+ billion rows of traceroute data from several measurement platforms in under 6 hours.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Python · PyTorch</span>
+        <div>
+          <h3><a href="https://github.com/ubombar/ai-text-detector">AI Text Detector</a></h3>
+          <p>Implements and compares four methods for detecting AI-generated text side by side: two zero-shot methods from recent papers, Binoculars and Fast-DetectGPT, a DeBERTa classifier, and GLTR, with an explanation of each verdict.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Python · PyTorch</span>
+        <div>
+          <h3><a href="https://github.com/ubombar/CVPR-MultiPoseEstimation">Multi-Person 3D Pose Estimation</a></h3>
+          <p>A depth-aware pipeline estimating 3D poses of multiple people from a single image, built on RootNet and evaluated on the COCO, CrowdPose and LSP benchmarks.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Go</span>
+        <div>
+          <h3><a href="https://github.com/ubombar/garagat">garagat</a></h3>
+          <p>A pure-Go port of the C++ traceroute engines caracal and caracat: a stateless IPv4/IPv6 Paris traceroute and ping engine with no cgo or libpcap, using raw sockets and kernel BPF filters generated in Go.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Go · CRIU</span>
+        <div>
+          <h3><a href="https://github.com/ubombar/live-pod-migration">Kubernetes Live Pod Migration</a></h3>
+          <p>A Kubernetes controller that live-migrates running containers between nodes using CRIU checkpoint/restore, preserving their state.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="community">
+    <h2>Leadership &amp; Community</h2>
+    <ul class="cv">
+      <li>
+        <span class="when">Leadership</span>
+        <div>
+          <h3>Founder <span class="at">SWE Club, Sorbonne University</span></h3>
+          <p>Founded and run biweekly discussions on Go, distributed systems and networking.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Leadership</span>
+        <div>
+          <h3>Co-founder <span class="at">Free Software Student Club, Bilkent University</span></h3>
+          <p>Organised PyTorch workshops for 30+ attendees.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Mentoring</span>
+        <div>
+          <h3>Mentor</h3>
+          <p>Free one-to-one mentoring for early-career engineers on Go, APIs and Linux.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Volunteering</span>
+        <div>
+          <h3>English Teacher <span class="at">SOS Children’s Village, North Macedonia</span></h3>
+          <p>Taught English to children as an AIESEC volunteer.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Volunteering</span>
+        <div>
+          <h3>Code Educator <span class="at">Code Education for Kids</span></h3>
+          <p>Introduced children to programming through Scratch workshops.</p>
         </div>
       </li>
     </ul>
@@ -145,6 +230,13 @@
   <section id="publications">
     <h2>Publications</h2>
     <ul class="cv">
+      <li>
+        <span class="when">2026</span>
+        <div>
+          <h3>High-Frequency Measurement of Internet Routing <span class="at">title withheld during review</span></h3>
+          <p><strong>U. Bombar</strong>, K. Vermeulen, O. Fourmaux, T. Friedman. Under double-blind review.</p>
+        </div>
+      </li>
       <li>
         <span class="when">2025</span>
         <div>
