@@ -34,8 +34,6 @@ footer{padding-top:56px;padding-bottom:48px}
   ul.cv li{flex-direction:column;gap:2px}
   nav a{margin-left:12px}
 }
-nav a.cv-link{color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:2px 8px}
-nav a.cv-link:hover{background:var(--accent);color:var(--bg)}
 .role{margin-bottom:4px}
 .loc{font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:400;color:var(--muted);margin-left:10px;white-space:nowrap}
 .langs{margin-top:0}
