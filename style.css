@@ -43,3 +43,5 @@ ul.cv p+p{margin-top:2px}
 .hero-head p{margin-bottom:0}
 .avatar{flex:none;width:112px;height:112px;border-radius:50%;object-fit:cover;border:1px solid var(--rule)}
 @media (max-width:520px){.hero-head{flex-direction:column;align-items:flex-start;gap:14px}.avatar{width:88px;height:88px}}
+nav a.blog-link{color:var(--accent);background:color-mix(in srgb,var(--accent) 16%,transparent);padding:2px 8px;border-radius:4px}
+nav a.blog-link:hover{background:color-mix(in srgb,var(--accent) 28%,transparent)}
